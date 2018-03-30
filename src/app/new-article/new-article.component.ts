@@ -8,8 +8,8 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 export class NewArticleComponent {
   @Output() createSender = new EventEmitter();
 
-  create(title: string, author: string, blurb: string, body: string, img: string, id: string){
-    let newArticle = new Article(title, author, blurb, body, img, parseInt(id));
+  create(title: string, author: string, blurb: string, body: string, img: string, alt: string, id: string){
+    let newArticle = new Article(title, author, blurb, body, img, alt, parseInt(id));
     this.createSender.emit(newArticle);
   }
 
