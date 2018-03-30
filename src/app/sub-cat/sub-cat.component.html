@@ -1,5 +1,5 @@
 <div class="articles-container">
-  <a href="#" *ngFor="let article of subList">
+  <a href="#" *ngFor="let article of subList | filter:searchBox">
   <div class="article-div"  id={{article.name}}+{{article.id}}>
     <div class="article-img">
       <img src={{article.img}} alt="{{article.alt}}">
