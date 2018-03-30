@@ -1,27 +1,75 @@
-# Review13AngularSite
+# _{Application Name}_
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
+#### _{Brief description of application}, {Date of current version}_
 
-## Development server
+#### By _**{List of contributors}**_
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Description
 
-## Code scaffolding
+_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Setup/Installation Requirements
 
-## Build
+* _Navigate to or create a parent directory for your copy of XXXXXXXX._
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+* _Clone this GitHub repository_
 
-## Running unit tests
+```
+git clone https://github.com/XXXXXXXXX/XXXXXXXX.git
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* _Setup Webpack and other dependencies by typing 'npm install' into the console_
 
-## Running end-to-end tests
+* _Next type 'npm install -g karma -cli'_
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+* _Next type 'npm run build' to make sure everything is installed correctly._
 
-## Further help
+* _You can type 'npm test' to run the testing routine._
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* _Run the program by typing 'npm run start_
+
+* _View program on web browser at port localhost:5000/ (or localhost:8080/)_
+
+* _Follow the prompts._
+
+## Known Bugs
+
+_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+
+## Support and contact details
+
+
+_To suggest changes, submit a pull request in the GitHub repository._
+
+## Technologies Used
+
+* HTML
+* Bootstrap
+* JavaScript
+* Webpack
+* Karma
+* Jasmine
+
+
+*MIT License*
+
+Copyright (c) 2018 **_Ian Goodrich_**
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+s
