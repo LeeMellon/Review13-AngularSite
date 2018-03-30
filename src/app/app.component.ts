@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Article } from './models/article.model';
+import { ApiCall } from './models/apiCall.model';
 
 @Component({
   selector: 'app-root',
