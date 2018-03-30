@@ -1,15 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-new-article',
   templateUrl: './new-article.component.html',
   styleUrls: ['./new-article.component.css']
 })
-export class NewArticleComponent implements OnInit {
+export class NewArticleComponent {
+  @Output() createSender = new EventEmitter();
+
+  create(title: string, author: string, blurb: string, body: string, img: string, id: string){
+    let newArticle = new Article(title, author, blurb, body, img, parseInt(id));
+    this.createSender.emit(newArticle);
+  }
 
   constructor() { }
 
-  ngOnInit() {
-  }
 
 }
