@@ -9,6 +9,9 @@ import { ApiCall } from './models/apiCall.model';
 })
 export class AppComponent {
   title = 'Bustle-Clone';
+  masterArticlesList: Article[]=[
+    new Article("Things Happen, People Freakout!", "J Nobody", "When crazy stuff goes down in hometown America, can Hometown-Americans respond rationaly?")
+  ]
 
 
   newArticle(newArticle){
