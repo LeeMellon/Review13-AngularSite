@@ -1,3 +1,8 @@
-<p>
-  new-article works!
-</p>
+
+<label for="new-article">New Article</label>
+<input #newTitle placeholder="name">
+<input #newAuthor placeholder="author">
+<input #newBody placeholder="body">
+<input #newBlurb placeholder="blurb">
+<input #newId placeholder="id">
+<button (click)="create(newTitle.value, newAuthor.value, newBody.value, newBlurb.value, newId.value); newTitle.value=''; newAuthor.value=''; newBody.value=''; newBlurb.value='' ; newId.value=''; ">Add New Article</button>
