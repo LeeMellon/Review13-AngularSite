@@ -33,6 +33,7 @@ img{
 }
 
 .text-container{
+  font-family: 'Cormorant Infant', serif;
   position: relative;
   padding-left: 125px;
   flex-flow: column;
