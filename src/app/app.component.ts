@@ -8,5 +8,10 @@ import { ApiCall } from './models/apiCall.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Bustle-Clone';
+
+
+  newArticle(newArticle){
+    this.masterArticlesList.push(newArticle); //ToDo: how to push to DB
+  }
 }
