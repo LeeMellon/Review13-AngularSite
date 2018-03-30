@@ -1,10 +1,25 @@
+<div class="nav">
+  <div class="">
+    <img src="./assets/img/bustle-logo.png" alt="bustle-logo">
+  </div>
+  <div class="nav-container">
+  <div class="new-article">New
+  </div>
+  <div class="serch">Search
+  </div>
+</div>
+</div>
 
-<label for="new-article">New Article</label>
-<input #newTitle placeholder="name">
-<input #newAuthor placeholder="author">
-<input #newBody placeholder="body">
-<input #newBlurb placeholder="blurb">
-<input #newImg placeholder="img">
-<input #newAlt placeholder="alt">
-<input #newId placeholder="id">
-<button (click)="create(newTitle.value, newAuthor.value, newBody.value, newBlurb.value, newImg.value, newAlt.value, newId.value); newTitle.value=''; newAuthor.value=''; newBody.value=''; newBlurb.value=''; newImg.value=''; newAlt.value=''; newId.value=''; ">Add New Article</button>
+
+
+<div class="">
+  <label for="new-article">New Article</label>
+  <input #newTitle placeholder="name">
+  <input #newAuthor placeholder="author">
+  <input #newBody placeholder="body">
+  <input #newBlurb placeholder="blurb">
+  <input #newImg placeholder="img">
+  <input #newAlt placeholder="alt">
+  <input #newId placeholder="id">
+  <button (click)="create(newTitle.value, newAuthor.value, newBody.value, newBlurb.value, newImg.value, newAlt.value, newId.value); newTitle.value=''; newAuthor.value=''; newBody.value=''; newBlurb.value=''; newImg.value=''; newAlt.value=''; newId.value=''; ">Add New Article</button>
+</div>
