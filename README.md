@@ -1,34 +1,39 @@
-# _{Application Name}_
+# _Bustle Clone_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _A mock-up of the Bustle website, {3-30-2018}_
 
-#### By _**{List of contributors}**_
+#### By _Ian Goodrich_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_A Bustle clone project that replicates the general look and functionality of www.bustle.com with:
+* a standard burger box menu
+* a Home page of general news
+* a Series of pages dedicated to a particular subject
+* links to social media
+* search functionality
+* lazy loading
+* more to come_
 
 ## Setup/Installation Requirements
 
-* _Navigate to or create a parent directory for your copy of XXXXXXXX._
+* _Navigate to or create a parent directory for your copy of Bustle Clone._
 
 * _Clone this GitHub repository_
 
 ```
-git clone https://github.com/XXXXXXXXX/XXXXXXXX.git
+git clone https://github.com/LeeMellon/Review13-AngularSite.git
 ```
 
-* _Setup Webpack and other dependencies by typing 'npm install' into the console_
+* _type 'npm install' into the console_
 
-* _Next type 'npm install -g karma -cli'_
+* _type ng serve_
 
-* _Next type 'npm run build' to make sure everything is installed correctly._
+* _View program on web browser at port localhost:4020_
 
-* _You can type 'npm test' to run the testing routine._
+* _If you get an error that says the default port is busy type ng serve --open --port 8080_
 
-* _Run the program by typing 'npm run start_
-
-* _View program on web browser at port localhost:5000/ (or localhost:8080/)_
+* _Ports other than 8080 are also acceptable_
 
 * _Follow the prompts._
 
@@ -43,8 +48,11 @@ _To suggest changes, submit a pull request in the GitHub repository._
 
 ## Technologies Used
 
+* Angular CLI: 1.7.3
+* Node: 8.2.1
+* OS: darwin x64
+* Angular: 5.2.9
 * HTML
-* Bootstrap
 * JavaScript
 * Webpack
 * Karma
