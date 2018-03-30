@@ -4,12 +4,14 @@ import { FormsModule }  from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { NewArticleComponent } from './new-article/new-article.component';
+import { SubCatComponent } from './sub-cat/sub-cat.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NewArticleComponent
+    NewArticleComponent,
+    SubCatComponent
   ],
   imports: [
     BrowserModule,
