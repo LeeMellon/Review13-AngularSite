@@ -2,7 +2,6 @@ body{
   display: flex;
 }
 .articles-container{
-  /*display: block;*/
   width: 60em;
   margin-left: 40em;
   margin-right: 40em;

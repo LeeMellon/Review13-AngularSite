@@ -38,13 +38,26 @@ button{
 .new-article{
   color: #bfbfbf;
   width: 20px;
+  height: auto;
+  width: auto;
+  padding: 0 19px 19px 0;
   align-self: flex-end;
 }
 
 .search{
-color: #bfbfbf;
+  color: #bfbfbf;
+  align-self: flex-end;
+  padding: 0 19px 19px 0;
 }
 
+.nav-container{
+  justify-content: flex-end;
+  height: 50px;
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+
+}
 
 .new-article-container{
   display: none;
