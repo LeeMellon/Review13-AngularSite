@@ -2,7 +2,7 @@
 .articles-container{
   display: block;
   width: 60em;
-  border: 1px red solid;
+  /*border: 1px red solid;*/
   margin-left: 40em;
   margin-right: 40em;
   padding: 30px;
