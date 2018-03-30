@@ -1,5 +1,6 @@
 <div class="articles-container">
-  <div class="article-div" *ngFor="let article of subList" id={{article.name}}+{{article.id}}>
+  <a href="#" *ngFor="let article of subList">
+  <div class="article-div"  id={{article.name}}+{{article.id}}>
     <div class="article-img">
       <img src={{article.img}} alt="{{article.alt}}">
     </div>
@@ -15,4 +16,5 @@
       </div>
     </div>
   </div>
+  </a>
 </div>
