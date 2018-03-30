@@ -1,0 +1,8 @@
+.articles-container{
+  width: 50em;
+  border: 1px red solid;
+}
+
+body{
+  justify-content: center;
+}
