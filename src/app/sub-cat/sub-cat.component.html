@@ -1,3 +1,18 @@
-<p>
-  sub-cat works!
-</p>
+<div class="articles-container">
+  <div class="article-div" *ngFor="let article of subList" id={{article.name}}+{{article.id}}>
+    <div class="article-img">
+      <img src={{article.img}} alt="{{article.alt}}">
+    </div>
+    <div class="text-container">
+      <div class="title">
+      <h2>{{article.title}}</h2>
+      </div>
+      <div class="blurb">
+        <h3>{{article.blurb}}</h3>
+      </div>
+      <div class="author">
+        <h5>{{article.author}}</h5>
+      </div>
+    </div>
+  </div>
+</div>
