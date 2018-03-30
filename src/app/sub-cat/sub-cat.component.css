@@ -1,8 +1,43 @@
+
 .articles-container{
-  width: 50em;
+  display: block;
+  width: 60em;
   border: 1px red solid;
+  margin-left: 40em;
+  margin-right: 40em;
+  padding: 30px;
+  flex-direction: column;
 }
 
-body{
-  justify-content: center;
+.article-div{
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 30px;
+  flex-direction: row;
+
+}
+
+.article-img{
+  /*position: relative;*/
+  height: 245px;
+  width: 470px;
+}
+
+
+img{
+  height: 245px;
+  width: 470px;
+}
+
+.text-container{
+  position: relative;
+  padding-left: 125px;
+  flex-flow: column;
+  float: right;
+  text-align: left;
+  display: block;
+  max-width: 50%;
 }
