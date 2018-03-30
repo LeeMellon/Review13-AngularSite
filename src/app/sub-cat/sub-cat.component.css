@@ -1,8 +1,9 @@
-
+body{
+  display: flex;
+}
 .articles-container{
-  display: block;
+  /*display: block;*/
   width: 60em;
-  /*border: 1px red solid;*/
   margin-left: 40em;
   margin-right: 40em;
   padding: 30px;
@@ -20,7 +21,6 @@
 }
 
 .article-img{
-  /*position: relative;*/
   height: 245px;
   width: 470px;
 }
