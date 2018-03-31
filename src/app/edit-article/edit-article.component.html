@@ -1,4 +1,4 @@
-<div class="" ngIf="editArticle">
+<div  *ngIf="editArticle">
    <h3>{{selectedEditArticle.title}}</h3>
 <input [(ngModel)]=editArticle.name>
 <input [(ngModel)]=editArticle.author>
