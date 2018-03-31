@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NewArticleComponent } from './new-article/new-article.component';
 import { SubCatComponent } from './sub-cat/sub-cat.component';
 import { ArticleEditComponent } from './article-edit/article-edit.component';
+import { EditArticleComponent } from './edit-article/edit-article.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { ArticleEditComponent } from './article-edit/article-edit.component';
     AppComponent,
     NewArticleComponent,
     SubCatComponent,
-    ArticleEditComponent
+    ArticleEditComponent,
+    EditArticleComponent
   ],
   imports: [
     BrowserModule,

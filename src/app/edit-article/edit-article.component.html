@@ -1,0 +1,11 @@
+<div class="" ngIf="editArticle">
+   <h3>{{selectedEditArticle.title}}</h3>
+<input [(ngModel)]=editArticle.name>
+<input [(ngModel)]=editArticle.author>
+<input [(ngModel)]=editArticle.body>
+<input [(ngModel)]=editArticle.blurb>
+<input [(ngModel)]=editArticle.img>
+<input [(ngModel)]=editArticle.alt>
+<input [(ngModel)]=editArticle.id>
+<button (click)="finishEdit()">Done</button>
+</div>

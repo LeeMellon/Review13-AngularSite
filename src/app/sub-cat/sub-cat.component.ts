@@ -8,6 +8,12 @@ import { Article } from '../models/article.model';
 })
 export class SubCatComponent {
   @Input() subList: Article[];
+  @Output() editClickSender = new EventEmitter();
+
+
+  editClick(article: Article){
+    this.editClickSender.emit(article)
+  }
   constructor() { }
 
 
