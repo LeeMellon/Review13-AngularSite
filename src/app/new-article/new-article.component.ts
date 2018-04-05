@@ -17,7 +17,7 @@ export class NewArticleComponent {
   }
 
   showNew(){
-    $(".new-article-container").fadeIn(300, "swing");
+    $(".new-article-container").toggle(300, "swing");
   }
   constructor() { }
 
