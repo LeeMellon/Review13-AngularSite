@@ -6,3 +6,6 @@ export var masterFirebaseConfig = {
     storageBucket: "",
     messagingSenderId: "191480470069"
   };
+
+
+export var API_KEY = "46e948f124ce44f3b3aca4e979f7d2bb"
