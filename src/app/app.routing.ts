@@ -1,11 +1,11 @@
 import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { SubCatComponent } from './sub-cat/sub-cat.component';
+import { MainPageComponent } from './main-page/main-page.component';
 
 const appRoutes: Routes = [
   {
-    path:'subcat',
-    component: SubCatComponent
+    path:'',
+    component: MainPageComponent
   }
 
 

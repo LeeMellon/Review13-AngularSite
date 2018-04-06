@@ -15,9 +15,7 @@ articlesList;
 
 
   getByCurrentBusiness(){
-this.http.get(`https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=API_KEY`).subscribe(articles=>{
-  this.articlesList=articles;
-})
-console.log(this.articlesList)
+  return this.http.get(`https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=46e948f124ce44f3b3aca4e979f7d2bb`)
   }
+
 }

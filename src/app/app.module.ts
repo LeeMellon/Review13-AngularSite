@@ -4,13 +4,13 @@ import { FormsModule }  from '@angular/forms';
 import { masterFirebaseConfig } from './api-keys';
 import { AppComponent } from './app.component';
 import { NewArticleComponent } from './new-article/new-article.component';
-import { SubCatComponent } from './sub-cat/sub-cat.component';
+// import { SubCatComponent } from './sub-cat/sub-cat.component';
 import { EditArticleComponent } from './edit-article/edit-article.component';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { routing } from './app.routing';
 import { HttpModule } from '@angular/http';
-
+import { MainPageComponent } from './main-page/main-page.component';
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
   authDomain: masterFirebaseConfig.authDomain,
@@ -24,8 +24,9 @@ export const firebaseConfig = {
   declarations: [
     AppComponent,
     NewArticleComponent,
-    SubCatComponent,
-    EditArticleComponent
+    // SubCatComponent,
+    EditArticleComponent,
+    MainPageComponent
   ],
   imports: [
     HttpModule,
