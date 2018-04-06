@@ -9,13 +9,13 @@ import { EditArticleComponent } from './edit-article/edit-article.component';
 const appRoutes: Routes = [
   {
     path:'',
-    component: NewArticleComponent
+    component: MainPageComponent
   },
   {
     path:'edit/:key',
     component: EditArticleComponent
   },
-  
+
 
 
 ];
