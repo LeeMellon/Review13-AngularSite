@@ -6,12 +6,12 @@ import { NewArticleComponent } from './new-article/new-article.component';
 const appRoutes: Routes = [
   {
     path:'',
-    component: MainPageComponent
-  },
-  {
-    path:'new-article',
     component: NewArticleComponent
-  }
+  },
+  // {
+  //   path:'new-article',
+  //   component: NewArticleComponent
+  // }
 
 
 ];

@@ -13,16 +13,16 @@ import { DatabaseService } from '../services/database.service';
   providers: [ArticlesApiService, DatabaseService]
 })
 export class MainPageComponent implements OnInit {
-articlesList;
+articlesList: FirebaseListObservable<any[]>;
   constructor(private router: Router, private articleApiService: ArticlesApiService, private database: DatabaseService) { }
 
   ngOnInit() {
     this.articlesList = this.database.getArticles();
   }
 
-  business(){
-    this.articlesList = this.articleApiService.getByCurrentBusiness()
-
-
-}
+//   business(){
+//     this.articlesList = this.articleApiService.getByCurrentBusiness()
+//
+//
+// }
 }

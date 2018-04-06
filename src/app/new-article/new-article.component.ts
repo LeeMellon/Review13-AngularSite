@@ -29,6 +29,9 @@ export class NewArticleComponent {
     $(".new-article-container").toggle(300, "swing");
   }
 
+  showSide(){
+    $(".side-menu-container").toggle(300, "swing");
+  }
 
   // business(){
   //   this.articleApiService.getByCurrentBusiness().subscribe(articles=>{

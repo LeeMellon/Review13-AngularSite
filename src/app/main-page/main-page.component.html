@@ -1,5 +1,5 @@
 <div class="articles-container">
-  <a href="#" *ngFor="let article of articlesList">
+  <a *ngFor="let article of articlesList| async;">
   <div class="article-div"  id={{article.name}}+{{article.id}}>
     <button (click)="editClick(article)">Edit</button>
     <div class="article-img">

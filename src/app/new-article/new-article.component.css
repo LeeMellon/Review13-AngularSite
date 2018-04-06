@@ -75,7 +75,8 @@ button{
 }
 
 .side-menu-container{
-  display: flex;
+  display: none;
+  float: left;
   flex-direction: column;
   width: 20vw;
   height: 55vw;
