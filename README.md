@@ -15,6 +15,11 @@ _A Bustle clone project that replicates the general look and functionality of ww
 * lazy loading
 * more to come_
 
+* _This site is hosted by Firebase. To view it please visit it at_
+
+https://bustle-clone-cc015.firebaseapp.com/
+
+ 
 ## Setup/Installation Requirements
 
 * _Navigate to or create a parent directory for your copy of Bustle Clone._
@@ -37,12 +42,12 @@ git clone https://github.com/LeeMellon/Review13-AngularSite.git
 
 * _Follow the prompts._
 
+
 ## Known Bugs
 
 _{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
 
 ## Support and contact details
-
 
 _To suggest changes, submit a pull request in the GitHub repository._
 
