@@ -8,6 +8,8 @@ import { DatabaseService } from '../services/database.service';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { DatePipe } from '@angular/common';
 
+
+
 @Component({
   selector: 'app-main-page',
   templateUrl: './main-page.component.html',
@@ -36,7 +38,7 @@ date = Date.now();
   }
 
   business(){
-    this.articleApiService.getByCurrentBusiness().subscribe(articles=>{
+    this.articleApiService.getBusiness().subscribe(articles=>{
       this.articlesList = articles.json();
       console.log(this.articlesList)
 

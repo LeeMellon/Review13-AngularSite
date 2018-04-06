@@ -32,4 +32,13 @@ export class NewArticleComponent {
     $(".side-menu-container").toggle(300, "swing");
   }
 
+  business(){
+    this.articleApiService.getBusiness().subscribe(articles=>{
+      this.articlesList = articles.json();
+      console.log(this.articlesList)
+
+
+    })
+}
+
   }

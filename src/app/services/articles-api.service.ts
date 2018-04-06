@@ -13,14 +13,17 @@ export class ArticlesApiService {
   constructor(private http: Http) { }
 
 
-  getByCurrentBusiness(){
+  getBusiness(){
   let apiKey = API_KEY;
   console.log(apiKey);
   return this.http.get("https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey="+apiKey)
 
+}
+getEntertianment(){
+  let apiKey= API_KEY2;
+  return this.http.get('http://webhose.io/filterWebContent?token='+apiKey+'&format=json&ts=1522448853587&sort=crawled&q=site_category%3Aentertainment%20language%3Aenglish')
 
-  // return this.http.get(`http://webhose.io/filterWebContent?token={"key"}&format=json&ts=1522448853587&sort=crawled&q=site_category%3Aentertainment%20language%3Aenglish`)
-  }
+}
 
 
 
