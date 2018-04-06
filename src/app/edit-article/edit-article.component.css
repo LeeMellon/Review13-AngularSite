@@ -1,0 +1,27 @@
+.edit-input{
+  font-size: 12pt;
+  width: 50vw;
+  height: 1.5vw;
+}
+
+.edit-body{
+  font-size: 12pt;
+}
+
+.edit-bttn{
+  color: white;
+  background-color: green;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 16pt;
+  margin-top: 15px;
+}
+
+.del-bttn{
+  color: black;
+  background-color: red;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 16pt;
+  margin: 25px;
+}

@@ -33,7 +33,9 @@ articles: FirebaseListObservable<any[]>;
       blurb: updatedArticle.blurb,
       body: updatedArticle.body,
       img: updatedArticle.img,
-      alt: updatedArticle.alt})
+      alt: updatedArticle.alt,
+      key: updatedArticle.$key
+    })
   }
 
   deletArticle(articleToDelete){

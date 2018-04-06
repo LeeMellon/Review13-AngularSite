@@ -32,12 +32,14 @@ export class EditArticleComponent {
     })
 }
   callToEdit(articleToEdit){
-    this.databaseService.editArticle(articleToEdit)
+    this.databaseService.editArticle(articleToEdit);
+    this.router.navigate(['']);
   }
 
   callToDelete(articleToDelete){
     if(confirm("Are you really really TOTES fur sursies?")){
       this.databaseService.deletArticle(articleToDelete);
+      this.router.navigate(['']);
     }
   }
 
