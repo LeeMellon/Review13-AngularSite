@@ -1,11 +1,19 @@
-<div  *ngIf="editArticle">
-   <h3>{{selectedEditArticle.title}}</h3>
-<input [(ngModel)]=editArticle.name>
-<input [(ngModel)]=editArticle.author>
-<input [(ngModel)]=editArticle.body>
-<input [(ngModel)]=editArticle.blurb>
-<input [(ngModel)]=editArticle.img>
-<input [(ngModel)]=editArticle.alt>
-<input [(ngModel)]=editArticle.id>
+<div  *ngIf="articleToEdit">
+  <h3>{{articleToEdit.title}}</h3>
+  <h4>Title</h4>
+    <input class="edit-input" [(ngModel)]=articleToEdit.title><br>
+  <h4>Author</h4>
+<input class="edit-input" [(ngModel)]=articleToEdit.author>
+  <h4>body</h4>
+<textarea class="edit-input" [(ngModel)]=articleToEdit.body>
+
+<input class="edit-input" [(ngModel)]=articleToEdit.blurb>
+
+<input class="edit-input" [(ngModel)]=articleToEdit.img>
+
+<input class="edit-input" [(ngModel)]=articleToEdit.alt>
+
+<input class="edit-input" [(ngModel)]=articleToEdit.id>
+
 <button (click)="finishEdit()">Done</button>
 </div>

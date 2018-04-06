@@ -25,7 +25,7 @@ articles: FirebaseListObservable<any[]>;
     return this.database.object('articles/' + key);
   }
 
-  updateArticle(updatedArticle){
+  editArticle(updatedArticle){
     let archivedArticle = this.getArticleByKey(updatedArticle.$key);
     archivedArticle.update(
       {title: updatedArticle.title,
