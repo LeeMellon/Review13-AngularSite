@@ -3,6 +3,7 @@ import { Article } from '../models/article.model';
 import * as $ from 'jquery'
 import { ArticlesApiService } from '../services/articles-api.service';
 import { Router } from '@angular/router';
+import { business } from '../main-page/main-page.component';
 
 @Component({
   selector: 'app-new-article',
@@ -12,6 +13,7 @@ import { Router } from '@angular/router';
 })
 export class NewArticleComponent {
   @Output() createSender = new EventEmitter();
+  @Output() listSender = new EventEmitter();
   constructor(private router: Router, private articleApiService: ArticlesApiService) { }
   articlesList;
 
@@ -30,6 +32,7 @@ export class NewArticleComponent {
   business(){
     this.articleApiService.getByCurrentBusiness().subscribe(articles=>{
       this.articlesList = articles;
+      this.listSender.emit(this.articlesList)
       console.log(this.articlesList)
     })
   }

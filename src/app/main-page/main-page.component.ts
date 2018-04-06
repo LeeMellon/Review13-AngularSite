@@ -3,6 +3,7 @@ import { Article } from '../models/article.model';
 import { HttpModule } from '@angular/http';
 import { ArticlesApiService } from '../services/articles-api.service';
 import { Router } from '@angular/router';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-main-page',
@@ -11,14 +12,15 @@ import { Router } from '@angular/router';
   providers: [ArticlesApiService]
 })
 export class MainPageComponent implements OnInit {
-articlesList;
+articlesList: FirebaseListObservable<any[]>;
   constructor(private router: Router, private articleApiService: ArticlesApiService) { }
 
   ngOnInit() {
   }
 
-  buisiness(){
-      this.articlesList = this.articleApiService.getByCurrentBusiness()
-    }
+  // business(){
+  //   this.articlesList = this.articleApiService.getByCurrentBusiness()
+  //   console.log(this.articlesList)
+  // }
 
 }
