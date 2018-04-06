@@ -11,6 +11,7 @@ export class DatabaseService {
 articles: FirebaseListObservable<any[]>;
   constructor(private database: AngularFireDatabase) {
     this.articles = database.list('articles');
+
   }
 
   getArticles(){

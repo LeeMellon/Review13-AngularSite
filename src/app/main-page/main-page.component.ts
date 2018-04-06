@@ -6,8 +6,7 @@ import { Location } from '@angular/common';
 import { FirebaseListObservable } from 'angularfire2/database';
 import { DatabaseService } from '../services/database.service';
 import { ActivatedRoute, Params, Router } from '@angular/router';
-
-
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-main-page',
@@ -16,12 +15,20 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
   providers: [ArticlesApiService, DatabaseService]
 })
 export class MainPageComponent implements OnInit {
-articlesList: FirebaseListObservable<any[]>;
+articleTop: Article
+// articlesList: FirebaseListObservable<any[]>;
+articlesList: Article[];
 articleKey: string;
+date = Date.now();
   constructor(private router: Router, private articleApiService: ArticlesApiService, private database: DatabaseService) { }
 
   ngOnInit() {
-    this.articlesList = this.database.getArticles();
+    // this.articlesList = this.database.getArticles();
+    this.database.getArticles().subscribe(articles=>{
+      this.articleTop = articles.shift();
+      this.articlesList = articles
+      console.log(this.articlesList)
+    })
   }
 
   editClick(article){
