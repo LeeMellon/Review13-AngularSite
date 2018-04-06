@@ -20,6 +20,7 @@ button{
   align-items: center;
   justify-content: center;
   background-color: white;
+  border: red solid 2px;
 }
 
 .logo{
@@ -30,6 +31,7 @@ button{
 
 .logo-div{
   display: flex;
+  margin: auto;
   flex-direction: row;
   position: relative;
   height: 45px;
@@ -63,12 +65,12 @@ button{
   display: none;
 }
 .menu-img-container{
-  float: inline-end;
+  margin-right: auto;
 
 }
 
 .menu-icon{
-  align-self: flex-end;
+  /*flex: none;*/
   width: 40px;
-  /*margin-right: 600px;*/
+  align-self: flex-start;
 }
