@@ -1,6 +1,6 @@
-<div class="articles-container">
-  <a *ngFor="let article of articlesList| async;">
-  <div class="article-div"  id={{article.name}}+{{article.id}}>
+<div class="articles-container" *ngFor="let article of articlesList| async;">
+  <a routerLink="article/{{article.$key}}">
+  <div class="article-div"  id={{article.title}}+{{article.$key}}>
     <button (click)="editClick(article)">Edit</button>
     <div class="article-img">
       <img src={{article.img}} alt="{{article.alt}}">

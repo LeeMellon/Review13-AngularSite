@@ -1,0 +1,20 @@
+<div class="display-container" *ngIf="articleToDisplay">
+<h1 class="title">{{articleToDisplay.title}}</h1>
+<h5 class="author">by {{articleToDisplay.author | uppercase }}</h5>
+<div class="body-container">
+  <div class="image-container">
+    <img src={{articleToDisplay.img}} alt="{{articleToDisplay.alt}}">
+    <p class="caption">{{articleToDisplay.blurb}}</p>
+  </div>
+  <div class="article-body">
+    {{articleToDisplay.body}}
+  </div>
+</div>
+</div>
+
+
+
+
+<!-- export class Article{
+  constructor(public title: string, public author: string, public blurb: string, public body: string, public img: string, public alt: string){}
+} -->
