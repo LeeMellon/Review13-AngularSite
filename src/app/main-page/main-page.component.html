@@ -1,17 +1,33 @@
+<div class="articles-container">
+  <a routerLink="article/{{articleTop.$key}}">
+  <div class="articleTop-div"  id={{articleTop.title}}+{{articleTop.$key}}>
+    <div class="article-img">
+      <img src={{articleTop.img}} alt="{{articleTop.alt}}">
+    </div>
+    <div class="text-container">
+      <div class="title">
+      <h1>{{articleTop.title}}</h1>
+      </div>
+      <div class="blurb">
+        <h2>{{articleTop.blurb}}</h2>
+      </div>
+      <div class="author">
+        <h5>{{articleTop.author}}</h5>
+      </div>
+    </div>
+    <button class="edit-bttn" (click)="editClick(articleTop)">Edit</button>
+  </div>
+</a>
 
 <div class="day-bar">
-
 </div>
 
-
-<div class="articles-container">
   <a routerLink="article/{{article.$key}}" *ngFor="let article of articlesList">
   <div class="article-div"  id={{article.title}}+{{article.$key}}>
     <div class="article-img">
       <img src={{article.img}} alt="{{article.alt}}">
     </div>
     <div class="text-container">
-      <button (click)="editClick(article)">Edit</button>
       <div class="title">
       <h2>{{article.title}}</h2>
       </div>
@@ -23,6 +39,6 @@
       </div>
     </div>
   </div>
+  <button class="edit-bttn" (click)="editClick(article)">Edit</button>
 </a>
-
 </div>

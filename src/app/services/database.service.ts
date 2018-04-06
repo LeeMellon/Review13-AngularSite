@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
+import { AngularFireDatabase, FirebaseListObservable, FirebaseObjectObservable } from 'angularfire2/database';
 import { Article } from '../models/article.model';
 
 
@@ -9,13 +9,18 @@ import { Article } from '../models/article.model';
 @Injectable()
 export class DatabaseService {
 articles: FirebaseListObservable<any[]>;
+article: FirebaseObjectObservable<any>;
   constructor(private database: AngularFireDatabase) {
     this.articles = database.list('articles');
-
+    this.article = database.object('articles'[0]);
   }
 
   getArticles(){
     return this.articles
+  }
+
+  getArticle(){
+    return this.article
   }
 
   addArticle(newArticle: Article){

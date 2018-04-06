@@ -3,7 +3,7 @@ import { Article } from '../models/article.model';
 import { HttpModule } from '@angular/http';
 import { ArticlesApiService } from '../services/articles-api.service';
 import { Location } from '@angular/common';
-import { FirebaseListObservable } from 'angularfire2/database';
+import { FirebaseListObservable, FirebaseObjectObservable } from 'angularfire2/database';
 import { DatabaseService } from '../services/database.service';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { DatePipe } from '@angular/common';
@@ -15,7 +15,7 @@ import { DatePipe } from '@angular/common';
   providers: [ArticlesApiService, DatabaseService]
 })
 export class MainPageComponent implements OnInit {
-articleTop: Article
+articleTop: FirebaseObjectObservable<Article>;
 // articlesList: FirebaseListObservable<any[]>;
 articlesList: Article[];
 articleKey: string;
@@ -23,11 +23,11 @@ date = Date.now();
   constructor(private router: Router, private articleApiService: ArticlesApiService, private database: DatabaseService) { }
 
   ngOnInit() {
-    // this.articlesList = this.database.getArticles();
+    this.articleTop = this.database.getArticle();
+    console.log(this.articleTop)
     this.database.getArticles().subscribe(articles=>{
       this.articleTop = articles.shift();
       this.articlesList = articles
-      console.log(this.articlesList)
     })
   }
 
