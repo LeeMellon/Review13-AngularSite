@@ -5,7 +5,6 @@ import { masterFirebaseConfig } from './api-keys';
 import { AppComponent } from './app.component';
 import { NewArticleComponent } from './new-article/new-article.component';
 import { SubCatComponent } from './sub-cat/sub-cat.component';
-import { ArticleEditComponent } from './article-edit/article-edit.component';
 import { EditArticleComponent } from './edit-article/edit-article.component';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
@@ -26,7 +25,6 @@ export const firebaseConfig = {
     AppComponent,
     NewArticleComponent,
     SubCatComponent,
-    ArticleEditComponent,
     EditArticleComponent
   ],
   imports: [
@@ -35,6 +33,7 @@ export const firebaseConfig = {
     FormsModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
+    routing
 
   ],
   providers: [],

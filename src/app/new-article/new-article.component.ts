@@ -1,11 +1,12 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Article } from '../models/article.model';
-import * as $ from 'jquery';
+import * as $ from 'jquery'
 
 @Component({
   selector: 'app-new-article',
   templateUrl: './new-article.component.html',
-  styleUrls: ['./new-article.component.css']
+  styleUrls: ['./new-article.component.css'],
+
 })
 export class NewArticleComponent {
   @Output() createSender = new EventEmitter();
@@ -19,7 +20,10 @@ export class NewArticleComponent {
   showNew(){
     $(".new-article-container").toggle(300, "swing");
   }
+
+
   constructor() { }
 
+  
 
 }

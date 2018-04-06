@@ -1,4 +1,7 @@
 
 <app-new-article (createSender)="newArticle($event)"></app-new-article>
-<app-sub-cat [subList]="masterArticlesList" (editClickSender)="editClickedArticle($event)"></app-sub-cat>
+<!-- <app-sub-cat></app-sub-cat> -->
 <app-edit-article [editArticle]="selectedEditArticle" (clickDone)="finishEdit()" ></app-edit-article>
+<router-outlet></router-outlet>
+
+<!-- [subList]="masterArticlesList" (editClickSender)="editClickedArticle($event) -->
