@@ -11,6 +11,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { routing } from './app.routing';
 import { HttpModule } from '@angular/http';
 import { MainPageComponent } from './main-page/main-page.component';
+import { SubsPageComponent } from './subs-page/subs-page.component';
 
 
 
@@ -29,7 +30,8 @@ export const firebaseConfig = {
     NewArticleComponent,
     EditArticleComponent,
     MainPageComponent,
-    DisplayArticleComponent
+    DisplayArticleComponent,
+    SubsPageComponent
   ],
   imports: [
     HttpModule,

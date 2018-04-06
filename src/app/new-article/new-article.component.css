@@ -75,12 +75,14 @@ button{
 }
 
 .side-menu-container{
+  font-family: 'Cormorant Infant', serif;
+  font-size: 16pt;
+  color: #fff;
   display: none;
   float: left;
   flex-direction: column;
   width: 20vw;
   height: 55vw;
-  border: red solid 2px;
   background: linear-gradient(135deg,#50e3c2,#85baff);
   background-image: linear-gradient(135deg, rgb(80, 227, 194), rgb(133, 186, 255));
   background-position-x: initial;
@@ -95,6 +97,5 @@ button{
 }
 
 .side-link{
-  border: red solid 2px;
   margin-bottom: 1px;
 }

@@ -16,8 +16,7 @@ import { DatePipe } from '@angular/common';
 })
 export class MainPageComponent implements OnInit {
 articleTop: FirebaseObjectObservable<Article>;
-// articlesList: FirebaseListObservable<any[]>;
-articlesList: Article[];
+articlesList: any[];
 articleKey: string;
 date = Date.now();
   constructor(private router: Router, private articleApiService: ArticlesApiService, private database: DatabaseService) { }
@@ -36,9 +35,11 @@ date = Date.now();
     this.router.navigate(['edit', article.$key]);
   }
 
-//   business(){
-//     this.articlesList = this.articleApiService.getByCurrentBusiness()
-//
-//
-// }
+  business(){
+    this.articleApiService.getByCurrentBusiness().subscribe(articles=>{
+      this.articlesList = articles.json();
+      console.log(this.articlesList)
+
+    })
+}
 }

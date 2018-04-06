@@ -4,7 +4,7 @@ import * as $ from 'jquery'
 import { ArticlesApiService } from '../services/articles-api.service';
 import { Router } from '@angular/router';
 import { DatabaseService } from '../services/database.service';
-import { FirebaseObjectObservable } from 'angularfire2/database';
+import { FirebaseObjectObservable,  } from 'angularfire2/database';
 
 @Component({
   selector: 'app-new-article',
@@ -13,10 +13,9 @@ import { FirebaseObjectObservable } from 'angularfire2/database';
   providers: [ArticlesApiService, DatabaseService]
 })
 export class NewArticleComponent {
-  @Output() createSender = new EventEmitter();
-  @Output() listSender = new EventEmitter();
+
+  articlesList: any[]=null;
   constructor(private router: Router, private articleApiService: ArticlesApiService, private databaseService: DatabaseService) { }
-  articlesList;
 
 
   create(title: string, author: string, blurb: string, body: string, img: string, alt: string){
@@ -33,13 +32,4 @@ export class NewArticleComponent {
     $(".side-menu-container").toggle(300, "swing");
   }
 
-  // business(){
-  //   this.articleApiService.getByCurrentBusiness().subscribe(articles=>{
-  //     console.log(articles)
-  //     this.articlesList = articles;
-  //     this.listSender.emit(this.articlesList)
-  //   })
-  // }
-
-
-}
+  }
