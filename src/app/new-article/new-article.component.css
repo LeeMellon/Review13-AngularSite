@@ -62,3 +62,13 @@ button{
 .new-article-container{
   display: none;
 }
+.menu-img-container{
+  float: inline-end;
+
+}
+
+.menu-icon{
+  align-self: flex-end;
+  width: 40px;
+  /*margin-right: 600px;*/
+}
