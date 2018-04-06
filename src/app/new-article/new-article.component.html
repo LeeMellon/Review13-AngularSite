@@ -28,8 +28,7 @@
   <input #newBlurb placeholder="blurb">
   <input #newImg placeholder="img">
   <input #newAlt placeholder="alt">
-  <input #newId placeholder="id">
-  <button (click)="create(newTitle.value, newAuthor.value, newBody.value, newBlurb.value, newImg.value, newAlt.value, newId.value); newTitle.value=''; newAuthor.value=''; newBody.value=''; newBlurb.value=''; newImg.value=''; newAlt.value=''; newId.value=''; ">Add New Article</button>
+  <button (click)="create(newTitle.value, newAuthor.value, newBody.value, newBlurb.value, newImg.value, newAlt.value); newTitle.value=''; newAuthor.value=''; newBody.value=''; newBlurb.value=''; newImg.value=''; newAlt.value='';">Add New Article</button>
 </div>
 
 <app-main-page></app-main-page>

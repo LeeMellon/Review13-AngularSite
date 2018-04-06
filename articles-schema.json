@@ -1,0 +1,28 @@
+{
+    "articles": [
+        {
+            "title": "Things Happen, People Freakout!",
+            "author": "J Nobody",
+            "blurb": "When crazy stuff goes down in hometown America, can Hometown-Americans respond rationaly?",
+            "body": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.",
+            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWbGgJcq99e1gywfim6rl4gH6dNargpeVmMa7JvLdn5MZ8qe6v",
+            "alt":"pictures of a bug"
+        },
+        {
+          "title": "Things Happen, People Freakout Somewhere Else!",
+          "author": "I Somebody II",
+          "blurb": "When crazy stuff goes down outside hometown America, can Hometown-Americans at least respond rationaly to that?",
+          "body": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.",
+          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQngkWr7zCR7RjE9Oh9rlIXQOJCFpVrsDssQgRVQfhkRTadqvryfg",
+          "alt":"woman making a funny face"
+        },
+        {
+          "title": "Important Things Happen, No one seems to care",
+          "author": "Who Cares esq.",
+          "blurb": "When important things actully do happen, who can be trusted to actully care?",
+          "body": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.",
+          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM9Eqax-Y38chcqn3HxwXVwigYXoNwAcvbxias-8NoukOSooRNug",
+          "alt":"Spongebob, becuse...yeah!"
+        }
+    ]
+}

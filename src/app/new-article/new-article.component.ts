@@ -10,7 +10,7 @@ import { FirebaseObjectObservable } from 'angularfire2/database';
   selector: 'app-new-article',
   templateUrl: './new-article.component.html',
   styleUrls: ['./new-article.component.css'],
-  providers: [ArticlesApiService]
+  providers: [ArticlesApiService, DatabaseService]
 })
 export class NewArticleComponent {
   @Output() createSender = new EventEmitter();
