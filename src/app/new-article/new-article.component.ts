@@ -3,6 +3,8 @@ import { Article } from '../models/article.model';
 import * as $ from 'jquery'
 import { ArticlesApiService } from '../services/articles-api.service';
 import { Router } from '@angular/router';
+import { DatabaseService } from '../services/database.service';
+import { FirebaseObjectObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-new-article',
@@ -13,13 +15,13 @@ import { Router } from '@angular/router';
 export class NewArticleComponent {
   @Output() createSender = new EventEmitter();
   @Output() listSender = new EventEmitter();
-  constructor(private router: Router, private articleApiService: ArticlesApiService) { }
+  constructor(private router: Router, private articleApiService: ArticlesApiService, private databaseService: DatabaseService) { }
   articlesList;
 
 
-  create(title: string, author: string, blurb: string, body: string, img: string, alt: string, id: string){
-    let newArticle = new Article(title, author, blurb, body, img, alt, parseInt(id));
-    this.createSender.emit(newArticle);
+  create(title: string, author: string, blurb: string, body: string, img: string, alt: string){
+    let newArticle = new Article(title, author, blurb, body, img, alt);
+    this.databaseService.addArticle(newArticle);
     $(".new-article-container").fadeOut(300,"swing");
   }
 
@@ -28,13 +30,13 @@ export class NewArticleComponent {
   }
 
 
-  business(){
-    this.articleApiService.getByCurrentBusiness().subscribe(articles=>{
-      console.log(articles)
-      this.articlesList = articles;
-      this.listSender.emit(this.articlesList)
-    })
-  }
+  // business(){
+  //   this.articleApiService.getByCurrentBusiness().subscribe(articles=>{
+  //     console.log(articles)
+  //     this.articlesList = articles;
+  //     this.listSender.emit(this.articlesList)
+  //   })
+  // }
 
 
 }

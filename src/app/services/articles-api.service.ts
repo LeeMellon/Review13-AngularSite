@@ -4,7 +4,7 @@ import { Observable } from 'rxjs/Observable';
 import { API_KEY } from '../api-keys';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 import { Article } from '../models/article.model';
-
+import { DatabsService } from '../services/database.service';
 
 
 
