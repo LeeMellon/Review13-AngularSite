@@ -12,6 +12,7 @@
 
 # Api Keys
 /src/app/api-keys.ts
+
 # IDEs and editors
 /.idea
 .project

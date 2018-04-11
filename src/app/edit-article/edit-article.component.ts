@@ -23,11 +23,9 @@ export class EditArticleComponent {
   ngOnInit() {
     this.route.params.forEach((urlParameters)=>{
       this.articleKey = urlParameters['key'];
-      console.log(this.articleKey)
     });
 
     this.databaseService.getArticleByKey(this.articleKey).subscribe(article=>{
-      console.log(article)
       this.articleToEdit = article;
     })
 }

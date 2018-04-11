@@ -15,7 +15,6 @@ export class ArticlesApiService {
 
   getBusiness(){
   let apiKey = API_KEY;
-  console.log(apiKey);
   return this.http.get("https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey="+apiKey)
 
 }

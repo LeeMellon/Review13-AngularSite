@@ -35,9 +35,6 @@ export class NewArticleComponent {
   business(){
     this.articleApiService.getBusiness().subscribe(articles=>{
       this.articlesList = articles.json();
-      console.log(this.articlesList)
-
-
     })
 }
 

@@ -25,7 +25,6 @@ date = Date.now();
 
   ngOnInit() {
     this.articleTop = this.database.getArticle();
-    console.log(this.articleTop)
     this.database.getArticles().subscribe(articles=>{
       this.articleTop = articles.shift();
       this.articlesList = articles
@@ -33,15 +32,12 @@ date = Date.now();
   }
 
   editClick(article){
-    console.log(article.$key)
     this.router.navigate(['edit', article.$key]);
   }
 
   business(){
     this.articleApiService.getBusiness().subscribe(articles=>{
       this.articlesList = articles.json();
-      console.log(this.articlesList)
-
     })
 }
 }
